@@ -1,33 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+body {
+	background: rgb(243, 238, 229);
+	color: black;
+	font-family: Helvetica;
+	overflow-x: hidden;
+	transition: all 0.3s;
+}
+
+.background-navy {
+	background: rgb(6, 18, 29);
+	color: rgb(243, 238, 229);
+}
+
+.background-red {
+	/* background: linear-gradient(to bottom, white, red); */
+	background: rgb(243, 178, 178);
+}
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+a,
+u {
+	text-decoration: none;
+}
+.Menu {
+	position: fixed;
+	right: 4%;
+	top: 5%;
+	text-align: left;
+	z-index: 1;
+	cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Menu h2 {
+	transition: 0.5s;
+	font-size: 20px;
+	animation: color-change 8s ease-out;
+	color: #c71f1f40;
 }
 
-.App-link {
-  color: #61dafb;
+.Menu h2:hover {
+	color: rgb(195, 61, 68);
+	font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-intro {
+	font-size: 10px;
+}
+
+@keyframes color-change {
+	0% {
+		font-size: 25px;
+		color: rgb(158, 38, 38);
+	}
+	80% {
+		font-size: 25px;
+		color: rgb(158, 38, 38);
+	}
+	95% {
+		font-size: 25px;
+	}
+}
+
+.resume-container {
+	position: absolute;
+	left: 0.5%;
+	top: 8%;
+	height: 200px;
+	width: 400px;
+	transition: all 0.2s ease-out;
+}
+.resume-container h2 {
+	font-family: Mansalva;
+	margin-top: 20px;
+	font-size: 22px;
+	color: rgb(158, 38, 38);
+	transition: all 0.2s ease-out;
+	transform: rotate(-10deg);
+	/* text-decoration: line-through; */
+}
+.resume-container h2:hover {
+	font-size: 25px;
+	transform: rotate(0deg);
+}
+.resume {
+	width: 100px;
+	transition: all 0.2s ease-out;
+}
+.resume:hover {
+	/* transform: rotate(360deg); */
+	width: 120px;
+}
+
+#outer-orbit {
+	position: absolute;
+	top: 3%;
+	left: 3%;
+	width: 294px;
+	height: 294px;
+	border: 2px #000000 dashed;
+	border-radius: 100%;
+	-webkit-animation: spin-right 20s linear infinite;
+	animation: spin-right 20s linear infinite;
+}
+
+@keyframes spin-right {
+	100% {
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+p {
+	font-size: 50px;
+	text-align: left;
+	margin: 0;
+	font-weight: lighter;
+}
+
+.description-container {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	width: 1025px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 250px;
+}
+
+h2 {
+	margin: 0;
+	font-weight: lighter;
+}
+
+h2.index {
+	margin-bottom: -50px;
+}
+
+h3 {
+	margin: 10px;
+	font-size: 50px;
+	font-style: italic;
+}
+
+h1.paris {
+	position: absolute;
+	right: -28.5%;
+	top: 25%;
+	transition: all 0.2s ease-out;
+}
+
+h1.paris:hover {
+	color: white;
+	font-size: 300px;
+}
+
+h1.mongkolkul {
+	position: absolute;
+	left: -21%;
+	top: 45%;
+	transition: all 0.5s ease-out;
+}
+
+h1.mongkolkul:hover {
+	color: rgb(158, 38, 38);
+	font-size: 220px;
+}
+
+sup {
+	font-size: 12px;
+}
+
+.sd {
+	padding: 100px;
+}
+
+.me {
+	margin: 0;
+	position: absolute;
+	left: 15.5%;
+	top: -60%;
+	transition: all 0.5s ease-out;
+}
+
+section {
+	height: 100vh;
+	/* border-bottom: 2px solid red; */
+	position: relative;
+}
+
+section.intro {
+	height: 120vh;
+}
+
+section.divider-small {
+	height: 20vh;
+}
+
+.header {
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	width: 620px;
+}
+
+.header.right {
+	text-align: right;
+	right: 5%;
+}
+
+.header.left {
+	text-align: left;
+	left: 5%;
+}
+
+.side-container-right {
+	position: absolute;
+	top: 70%;
+	right: -14%;
+	transition: all 0.8s ease-out;
+}
+
+.side-container-left {
+	position: absolute;
+	z-index: 1;
+	top: 60%;
+	left: -16%;
+	transition: all 0.8s ease-out;
+}
+.side {
+	color: rgb(243, 238, 229);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+	font-size: 200px;
+	font-family: Neue;
+	transform: rotate(270deg);
+	transition: all 0.4s ease-out;
+}
+.side:hover {
+	color: rgb(0, 0, 0);
+}
+
+section.section-work {
+	height: 130vh;
+}
+section.section-skills {
+	height: 140vh;
+}
+
+.woosh-container {
+	position: absolute;
+	top: -39%;
+	right: 0%;
+}
+.woosh {
+	width: 1500px;
+}
+.programming {
+	position: absolute;
+	font-size: 150px;
+	right: -47%;
+	top: -5%;
+	transition: all 0.2s ease-out;
+}
+.skills {
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+.others-container {
+	width: 1200px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+
+.others-container p {
+	font-size: 40px;
+}
+
+.thaisoc-logo-container {
+	position: absolute;
+	right: 10%;
+	top: 30%;
+}
+
+.thaisoc-logo {
+	width: 300px;
+	cursor: pointer;
+}
+
+.contacts {
+	height: 90vh;
+}
+
+.footer {
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer p {
+	font-size: 20px;
+	font-family: Ubuntu;
+}
+
+.footer p:before {
+	transform: scaleX(0);
+	transition: 0.25s linear;
+	border-radius: 5px;
+}
+.footer p:hover:before,
+.footer p:focus:before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+.email {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.typing-contact {
+	font-size: 40px;
+}
+
+.footer p {
+	cursor: pointer;
 }
