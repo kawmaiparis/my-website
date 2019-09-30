@@ -9,6 +9,7 @@ import './App.css'
 import './Scrollbar.css'
 import Work from './Work.js'
 import Skills from './Skills.js'
+import Projects from './Projects.js'
 
 import thaiSocLogo from './images/thaisoc.png'
 import resume from './images/my_resume.pdf'
@@ -55,7 +56,7 @@ class App extends React.Component {
 			console.log(window.scrollY)
 
 			// for Background color change
-			if (window.scrollY >= 2000 && window.scrollY < 2800) {
+			if (window.scrollY >= 2000 && window.scrollY < 3000) {
 				document.querySelector('.work-title').classList.add('text-blue')
 				document.body.classList.add('background-navy')
 			} else {
@@ -74,17 +75,17 @@ class App extends React.Component {
 			} else {
 				document.getElementById('myexperience').style.fontSize = '18px'
 			}
-			if (window.scrollY >= 4200 && window.scrollY < 5200) {
+			if (window.scrollY >= 4200 && window.scrollY < 6100) {
 				document.getElementById('myprojects').style.fontSize = '30px'
 			} else {
 				document.getElementById('myprojects').style.fontSize = '18px'
 			}
-			if (window.scrollY >= 5200 && window.scrollY < 5800) {
+			if (window.scrollY >= 6100 && window.scrollY < 6800) {
 				document.getElementById('myothers').style.fontSize = '30px'
 			} else {
 				document.getElementById('myothers').style.fontSize = '18px'
 			}
-			if (window.scrollY >= 5800) {
+			if (window.scrollY >= 6800) {
 				document.getElementById('mycontact').style.fontSize = '30px'
 			} else {
 				document.getElementById('mycontact').style.fontSize = '18px'
@@ -118,10 +119,28 @@ class App extends React.Component {
 		})
 
 		// ScrollReveal Js
+
 		ScrollReveal().reveal('.description-reveal', {
 			delay: 1000,
 			duration: 1200,
 			distance: '200px',
+			opacity: 0
+		})
+		ScrollReveal().reveal('.others-container', {
+			duration: 2000,
+			origin: 'left',
+			distance: '200px',
+			opacity: 0
+		})
+		ScrollReveal().reveal('.footer', {
+			duration: 3000,
+			scale: 0.85,
+			opacity: 0
+		})
+		ScrollReveal().reveal('.resume-big-container', {
+			delay: 2000,
+			duration: 1000,
+			scale: 0.85,
 			opacity: 0
 		})
 	}
@@ -133,35 +152,6 @@ class App extends React.Component {
 	}
 
 	render() {
-		// Language advanced, intermediate, beginner, others
-		const skills = [
-			['C', 'Java', 'JavaScript', 'HTML & CSS'],
-			['Python', 'C++', 'Haskell', 'Prolog'],
-			['Elixir', 'Go', 'Solidity'],
-			[
-				'Node & React',
-				'Unit Testing: Mocha & Chai',
-				'Unit Testing: JUnit',
-				'GCP',
-				'AWS',
-				'Digital Ocean',
-				'Heroku',
-				'Kubernetes',
-				'Docker',
-				'CI/CD',
-				'Postgresql',
-				'MySql',
-				'Mongo',
-				'OAuth2.0',
-				'JWT',
-				'NGINX',
-				'Git',
-				'Linux',
-				'Android development',
-				'Latex'
-			]
-		]
-
 		return (
 			<div className='App'>
 				<div className='Menu'>
@@ -237,16 +227,6 @@ class App extends React.Component {
 						this.intro = section
 					}}
 				>
-					<div className='resume-big-container'>
-						<div id='outer-orbit'></div>
-
-						<div className='resume-container'>
-							<a href={resume} download='Paris Mongkolkul resume.pdf'>
-								<img src={resume_thumbnail} className='resume' />
-								<h2> SEE MY RESUME !</h2>
-							</a>
-						</div>
-					</div>
 					<h2 className='sd'>SOFTWARE ENGINEER.</h2>
 					<h1 className='paris lax' data-lax-preset='rightToLeft-0.5'>
 						PARIS
@@ -280,9 +260,20 @@ class App extends React.Component {
 							<p className='description-reveal'>
 								A final year Computing student at Imperial College London based
 								in, well, London. I still can't decide between frontend,
-								backend, and 150 other specialized job titles. So I'm sticking
-								with the plain sweet old "Software Engineer". For now, at least.
+								backend, and 150 other specialized job titles. So I'm currently
+								open to any exciting and challenging opportunities anyone has to
+								offer.
 							</p>
+						</div>
+					</div>
+					<div className='resume-big-container'>
+						<div id='outer-orbit'></div>
+
+						<div className='resume-container'>
+							<a href={resume} download='Paris Mongkolkul resume.pdf'>
+								<img src={resume_thumbnail} className='resume' />
+								<h2 className='resume-text'> SEE MY RESUME !</h2>
+							</a>
 						</div>
 					</div>
 				</section>
@@ -319,6 +310,7 @@ class App extends React.Component {
 					</div>
 				</section>
 				<section
+					className='projects'
 					ref={section => {
 						this.projects = section
 					}}
@@ -327,8 +319,10 @@ class App extends React.Component {
 						<h3>PROJECTS</h3>
 						<h2 className='index'>03</h2>
 					</div>
+					<Projects />
 				</section>
 				<section
+					className='others'
 					ref={section => {
 						this.skills = section
 					}}
@@ -338,8 +332,32 @@ class App extends React.Component {
 						<h3>WHAT ELSE?</h3>
 					</div>
 					<div className='others-container'>
+						<h2>Imperial College Thai Society</h2>
+						<br />
+
 						<p>
-							<i>President</i> of the Imperial College Thai Society 2019-present
+							<span className='others-title A'>President</span> 2019-present
+						</p>
+						<p>
+							<span className='others-title B'>
+								Event Coordinator / Screenwriter / Actor
+							</span>{' '}
+							2017-2019
+						</p>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<h2>Harrow International School Bangkok </h2>
+						<br />
+
+						<p>
+							<span className='others-title C'>House Captain</span> 2016-2017
+						</p>
+						<p>
+							<span className='others-title D'>Charity Project Leader</span>{' '}
+							2015-2016
 						</p>
 					</div>
 					<div className='thaisoc-logo-container'>
@@ -348,9 +366,8 @@ class App extends React.Component {
 							className='thaisoc-logo'
 							alt='thaiSoc-logo'
 							onClick={() =>
-								window.open(
-									'https://www.facebook.com/groups/139633776127649/',
-									'_blank'
+								this.openLink(
+									'https://www.facebook.com/groups/139633776127649/'
 								)
 							}
 						/>

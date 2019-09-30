@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:700);
+
 body {
 	background: rgb(243, 238, 229);
 	color: black;
 	font-family: Helvetica;
 	overflow-x: hidden;
 	transition: all 0.3s;
+	cursor: default;
 }
 
 .background-navy {
@@ -68,42 +70,50 @@ u {
 	}
 }
 
+.resume-big-container {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	left: 82%;
+	top: 30%;
+}
+
 .resume-container {
-	position: absolute;
-	left: 0.5%;
-	top: 8%;
 	height: 200px;
-	width: 400px;
+	width: 200px;
 	transition: all 0.2s ease-out;
+	position: absolute;
+	top: 24%;
+	right: -20%;
 }
 .resume-container h2 {
 	font-family: Mansalva;
-	margin-top: 20px;
 	font-size: 22px;
-	color: rgb(158, 38, 38);
+	color: rgb(0, 0, 0);
 	transition: all 0.2s ease-out;
-	transform: rotate(-10deg);
+	transform: rotate(-25deg);
 	/* text-decoration: line-through; */
 }
-.resume-container h2:hover {
-	font-size: 25px;
-	transform: rotate(0deg);
-}
+
 .resume {
-	width: 100px;
-	transition: all 0.2s ease-out;
+	width: 400px;
+	transition: all 1s ease-out;
+}
+.resume-text {
+	position: absolute;
+	top: -40%;
+	left: -40%;
 }
 .resume:hover {
 	/* transform: rotate(360deg); */
-	width: 120px;
+	width: px;
+	transform: translateX(-50%);
 }
 
 #outer-orbit {
 	position: absolute;
-	top: 3%;
-	left: 3%;
-	width: 294px;
-	height: 294px;
+	width: 700px;
+	height: 700px;
 	border: 2px #000000 dashed;
 	border-radius: 100%;
 	-webkit-animation: spin-right 20s linear infinite;
@@ -136,7 +146,7 @@ p {
 
 h1 {
 	margin: 0;
-	font-size: 250px;
+	font-size: 240px;
 }
 
 h2 {
@@ -151,12 +161,11 @@ h2.index {
 h3 {
 	margin: 10px;
 	font-size: 50px;
-	font-style: italic;
 }
 
 h1.paris {
 	position: absolute;
-	right: -28.5%;
+	right: -27.5%;
 	top: 25%;
 	transition: all 0.2s ease-out;
 }
@@ -169,7 +178,7 @@ h1.paris:hover {
 h1.mongkolkul {
 	position: absolute;
 	left: -21%;
-	top: 45%;
+	top: 46%;
 	transition: all 0.5s ease-out;
 }
 
@@ -184,6 +193,24 @@ sup {
 
 .sd {
 	padding: 100px;
+	animation: fadeIn 1.5s ease-out;
+	transition: all 0.3s ease-out;
+	letter-spacing: 10px;
+}
+.sd:hover {
+	letter-spacing: 15px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .me {
@@ -196,6 +223,7 @@ sup {
 
 section {
 	height: 100vh;
+
 	/* border-bottom: 2px solid red; */
 	position: relative;
 }
@@ -216,6 +244,13 @@ section.divider-small {
 	justify-content: space-between;
 	position: absolute;
 	width: 620px;
+	transition: all 0.5s ease-out;
+}
+.header h3 {
+	transition: all 0.5s ease-out;
+}
+.header h3:hover {
+	letter-spacing: 10px;
 }
 
 .header.right {
@@ -284,21 +319,57 @@ section.section-skills {
 	height: 100%;
 }
 
+section.projects {
+	height: 200vh;
+}
+section.others {
+	height: 80vh;
+}
 .others-container {
 	width: 1200px;
 	position: absolute;
-	top: 20%;
-	left: 20%;
+	top: 25%;
+	left: 10%;
 }
 
 .others-container p {
 	font-size: 40px;
 }
 
+.others-title {
+	font-family: Ubuntu;
+}
+
+.others-title.A {
+	color: #9c0d20;
+}
+.others-title.B {
+	color: #f85f73;
+}
+.others-title.C {
+	color: #283c63;
+}
+.others-title.D {
+	color: #3b60aa;
+}
+
 .thaisoc-logo-container {
 	position: absolute;
 	right: 10%;
 	top: 30%;
+	animation: dook-dik 5s infinite ease-out;
+}
+
+@keyframes dook-dik {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .thaisoc-logo {
@@ -349,4 +420,11 @@ section.section-skills {
 
 .footer p {
 	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+.footer p:hover {
+	/* font-size: 30px; */
+	color: rgb(243, 238, 229);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
 }

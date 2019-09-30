@@ -3,10 +3,22 @@ import sertisLogo from './images/sertis_logo.png'
 import tftLogo from './images/tft.png'
 import sepLogo from './images/sep_logo.png'
 import garenaLogo from './images/garena.png'
+import posed from 'react-pose'
 
 import './Work.css'
 
+const Para = posed.div({
+	open: { y: 0, opacity: 1 },
+	closed: { y: 20, opacity: 0 },
+	hoverable: true,
+	init: { scale: 1 },
+	hover: { scale: 1.1 },
+	pressable: true,
+	press: { scale: 0.8 }
+})
+
 class Work extends React.Component {
+	componentDidMount() {}
 	render() {
 		return (
 			<div>
@@ -34,20 +46,23 @@ class Work extends React.Component {
 							className='lax sub-grid-container-1'
 							data-lax-preset='eager-150'
 						>
-							<h5>
-								Diamonds &nbsp;
-								<img
-									src={tftLogo}
-									className='small-logo'
-									alt='tft-logo'
-									onClick={() =>
-										window.open(
-											'http://diamonds.teachforthailand.org/page/home',
-											'_blank'
-										)
-									}
-								/>
-							</h5>
+							<Para>
+								<h5>
+									Diamonds &nbsp;
+									<img
+										src={tftLogo}
+										className='small-logo'
+										alt='tft-logo'
+										onClick={() =>
+											window.open(
+												'http://diamonds.teachforthailand.org/page/home',
+												'_blank'
+											)
+										}
+									/>
+								</h5>
+							</Para>
+
 							<p className='text-small'>
 								Solely developed phase 2 of the web platform used by teachers to
 								manage and generate exams using statistics-based algorithms.
@@ -70,20 +85,23 @@ class Work extends React.Component {
 							className='lax sub-grid-container-2'
 							data-lax-preset='eager-150'
 						>
-							<h5>
-								Fermi &nbsp;
-								<img
-									src={sepLogo}
-									className='small-logo'
-									alt='sep-logo'
-									onClick={() =>
-										window.open(
-											'https://www.sertiscorp.com/blockchain?fbclid=IwAR1yzfCNGmx4mlu99KegvfyuWvD0PyvgzFCKo8wylPX1nETVvktlXp6fx4A',
-											'_blank'
-										)
-									}
-								/>
-							</h5>
+							<Para>
+								<h5>
+									Fermi &nbsp;
+									<img
+										src={sepLogo}
+										className='small-logo'
+										alt='sep-logo'
+										onClick={() =>
+											window.open(
+												'https://www.sertiscorp.com/blockchain?fbclid=IwAR1yzfCNGmx4mlu99KegvfyuWvD0PyvgzFCKo8wylPX1nETVvktlXp6fx4A',
+												'_blank'
+											)
+										}
+									/>
+								</h5>
+							</Para>
+
 							<p className='text-small'>
 								Studied and Refactored the Smart Contracts energy platform
 								application, and wrote unit tests using{' '}
@@ -102,7 +120,10 @@ class Work extends React.Component {
 							className='lax sub-grid-container-3'
 							data-lax-preset='eager-150'
 						>
-							<h5>Big Upload RESTful API</h5>
+							<Para>
+								<h5>Big Upload RESTful API</h5>
+							</Para>
+
 							<p className='text-small'>
 								Implemented a{' '}
 								<span className='text-highlight'>
@@ -124,10 +145,7 @@ class Work extends React.Component {
 								className='big-logo'
 								alt='sep-logo'
 								onClick={() =>
-									window.open(
-										'https://www.sertiscorp.com/blockchain?fbclid=IwAR1yzfCNGmx4mlu99KegvfyuWvD0PyvgzFCKo8wylPX1nETVvktlXp6fx4A',
-										'_blank'
-									)
+									window.open('https://www.garena.co.th', '_blank')
 								}
 							/>
 							<h2 className='fullstack red'>

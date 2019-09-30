@@ -1,11 +1,19 @@
 .big-logo {
 	cursor: pointer;
 	width: 400px;
+	transition: all 0.2s ease-out;
 }
 .small-logo {
 	width: 200px;
 	vertical-align: middle;
 	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+.small-logo:hover {
+	transform: scale(1.1) rotate(5deg);
+}
+.big-logo:hover {
+	transform: scale(1.2) rotate(-3deg);
 }
 .work-sertis {
 	position: relative;

@@ -32,7 +32,7 @@ const Item = posed.li({
 	closed: { y: 20, opacity: 0 },
 	hoverable: true,
 	init: { scale: 1 },
-	hover: { scale: 1.4 },
+	hover: { scale: 1.2 },
 	pressable: true,
 	press: { scale: 0.8 }
 })
@@ -50,9 +50,9 @@ const Item2 = posed.li({
 			}
 		}
 	},
-	hoverable: true,
-	init: { scale: 1 },
-	hover: { scale: 0.8 }
+	// hoverable: true,
+	init: { scale: 1 }
+	// hover: { scale: 0.8 }
 })
 
 class Skills extends React.Component {

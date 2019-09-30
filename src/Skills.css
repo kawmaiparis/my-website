@@ -65,7 +65,7 @@
 
 .item {
 	background: #43415f;
-	border-radius: 5px;
+	border-radius: 12px;
 	height: 50px;
 	width: 100%;
 	opacity: 0;
@@ -155,28 +155,28 @@ li:nth-child(2),
 li:nth-child(3),
 li:nth-child(4),
 li:nth-child(5) {
-	background: #f0f5f9;
+	background: #eccd8f;
 }
 li:nth-child(6),
 li:nth-child(7),
 li:nth-child(8),
 li:nth-child(9),
 li:nth-child(10) {
-	background: #c9d6df;
+	background: #cc6a87;
 }
 li:nth-child(11),
 li:nth-child(12),
 li:nth-child(13),
 li:nth-child(14),
 li:nth-child(15) {
-	background: #52616b;
-	color: white;
+	background: #8d448b;
+	color: rgb(255, 236, 200);
 }
 li:nth-child(16),
 li:nth-child(17),
 li:nth-child(18),
 li:nth-child(19),
 li:nth-child(20) {
-	background: #1e2022;
-	color: white;
+	background: #5026a7;
+	color: rgb(255, 236, 200);
 }

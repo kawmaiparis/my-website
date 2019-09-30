@@ -1,0 +1,78 @@
+.project-container {
+	padding-top: 10px;
+}
+.project {
+	margin: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project p {
+	margin-top: -10px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.project h1 {
+	font-size: 200px;
+	transition: all 0.3s ease-out;
+	cursor: default;
+}
+
+.project.A h1:hover {
+	color: #e23e57;
+	transform: rotate(-3deg);
+}
+.project.B h1:hover {
+	color: #2ec4b6;
+	transform: rotate(3deg);
+}
+.project.C h1:hover {
+	color: #ffd903;
+	transform: rotate(-3deg);
+}
+
+.github_logo {
+	margin-left: -15px;
+	margin: 5px;
+	width: 50px;
+}
+
+.two-buttons {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.item3 {
+	margin-top: 20px;
+	background: #43415f;
+	border-radius: 30px;
+	height: 50px;
+	width: 40%;
+	opacity: 0;
+	color: white;
+	font-family: Ubuntu;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.item3.redA {
+	background: #e23e57;
+}
+
+.item3.redB {
+	background: #2ec4b6;
+}
+.item3.redC {
+	background: #6a7fdb;
+}
+.item3.redD {
+	background: #e28413;
+}
