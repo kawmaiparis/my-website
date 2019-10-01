@@ -25,10 +25,15 @@ class App extends React.Component {
 	}
 	componentDidMount() {
 		// lax Js
+
 		lax.setup()
 		window.addEventListener('resize', () => {
+			const width = window.innerWidth
+			const height = window.innerHeight
+			if (width < 1580 || height < 826) {
+			}
 			lax.updateElements()
-			console.log('I will fix this I promise :(')
+			// console.log('I will fix this I promise :(')
 		})
 
 		// type Js
@@ -53,7 +58,6 @@ class App extends React.Component {
 		document.addEventListener('scroll', x => {
 			const offset = this.about.offsetTop - window.scrollY
 			// console.log(offset)
-			console.log(window.scrollY)
 
 			// for Background color change
 			if (window.scrollY >= 2000 && window.scrollY < 3000) {
@@ -152,6 +156,7 @@ class App extends React.Component {
 	}
 
 	render() {
+		console.log('hoe')
 		return (
 			<div className='App'>
 				<div className='Menu'>
@@ -271,7 +276,11 @@ class App extends React.Component {
 
 						<div className='resume-container'>
 							<a href={resume} download='Paris Mongkolkul resume.pdf'>
-								<img src={resume_thumbnail} className='resume' />
+								<img
+									alt='resume_thumbnail'
+									src={resume_thumbnail}
+									className='resume'
+								/>
 								<h2 className='resume-text'> SEE MY RESUME !</h2>
 							</a>
 						</div>
