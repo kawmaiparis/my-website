@@ -391,8 +391,10 @@ class App extends React.Component {
 				</section>
 				<section className='footer'>
 					{/* open email on CLick */}
-					<div onClick={() => this.openLink('https://google.com')}>
-						<p>EMAIL</p>
+					<div>
+						<a href='mailto:paris.kawmai@gmail.com'>
+							<p>EMAIL</p>
+						</a>
 					</div>
 					<div
 						onClick={() =>

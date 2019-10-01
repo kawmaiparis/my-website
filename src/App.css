@@ -30,6 +30,7 @@ body {
 a,
 u {
 	text-decoration: none;
+	color: black;
 }
 .Menu {
 	position: fixed;
@@ -165,7 +166,7 @@ h3 {
 
 h1.paris {
 	position: absolute;
-	right: -27.5%;
+	right: -28.5%;
 	top: 25%;
 	transition: all 0.2s ease-out;
 }
@@ -177,7 +178,7 @@ h1.paris:hover {
 
 h1.mongkolkul {
 	position: absolute;
-	left: -21%;
+	left: -20%;
 	top: 46%;
 	transition: all 0.5s ease-out;
 }
