@@ -10,7 +10,7 @@ class Mobile extends React.Component {
 				</h1>
 				<br />
 				<h1 className='mobile-h1'>
-					I promise I'll fix this when I have more freetime.
+					I promise I'll fix this when I have more free time.
 				</h1>
 				<h1 className='mobile-h1'>:(</h1>
 			</div>

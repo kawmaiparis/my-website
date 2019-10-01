@@ -117,7 +117,7 @@ class App extends React.Component {
 					'<p style="font-size: 30px; letter-spacing: 0.5em;"> sarcarstic.</p>'
 			} else if (offset > 0) {
 				me.innerHTML =
-					'<p style="font-weight: bold; font-size: 50px;">Paris.</p>'
+					'<p style="font-weight: bold; font-size: 80px;">Paris.</p>'
 			}
 			lax.update(window.scrollY)
 		})
@@ -254,7 +254,7 @@ class App extends React.Component {
 					<div className='description-container'>
 						<p
 							className='me lax'
-							data-lax-translate-y='0 0, 300 10, 1000 275  | speed=1'
+							data-lax-translate-y='0 0, 300 10, 1000 245  | speed=1'
 						>
 							Paris.
 						</p>
