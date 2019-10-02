@@ -9,8 +9,9 @@ import * as serviceWorker from './serviceWorker'
 // min height 826
 const width = window.innerWidth
 const height = window.innerHeight
+console.log(height)
 
-if (width < 1580 || height < 826) {
+if (width < 1580 || height < 821) {
 	ReactDOM.render(<Mobile />, document.getElementById('root'))
 } else {
 	ReactDOM.render(<App />, document.getElementById('root'))
