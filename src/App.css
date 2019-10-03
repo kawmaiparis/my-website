@@ -147,10 +147,11 @@ p {
 
 h1 {
 	margin: 0;
-	font-size: 240px;
+	font-size: 13.5vw;
 }
 
 h2 {
+	font-size: 1.5vw;
 	margin: 0;
 	font-weight: lighter;
 }
@@ -173,19 +174,19 @@ h1.paris {
 
 h1.paris:hover {
 	color: white;
-	font-size: 300px;
+	font-size: 18vw;
 }
 
 h1.mongkolkul {
 	position: absolute;
-	left: -20%;
+	left: -20.5%;
 	top: 46%;
 	transition: all 0.5s ease-out;
 }
 
 h1.mongkolkul:hover {
 	color: rgb(158, 38, 38);
-	font-size: 220px;
+	font-size: 12vw;
 }
 
 sup {
@@ -282,7 +283,7 @@ section.divider-small {
 	color: rgb(243, 238, 229);
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
 		1px 1px 0 #000;
-	font-size: 200px;
+	font-size: 11vw;
 	font-family: Neue;
 	transform: rotate(270deg);
 	transition: all 0.4s ease-out;
@@ -308,10 +309,16 @@ section.section-skills {
 }
 .programming {
 	position: absolute;
-	font-size: 150px;
+	font-size: 20vh;
 	right: -47%;
 	top: -5%;
 	transition: all 0.3s ease-out;
+}
+@media (max-height: 720px) {
+	.programming {
+		/* color: green; */
+		visibility: hidden;
+	}
 }
 .skills {
 	position: absolute;
@@ -334,7 +341,7 @@ section.others {
 }
 
 .others-container p {
-	font-size: 40px;
+	font-size: 2.5vw;
 }
 
 .others-title {
@@ -356,7 +363,7 @@ section.others {
 
 .thaisoc-logo-container {
 	position: absolute;
-	right: 10%;
+	right: 5%;
 	top: 30%;
 	animation: dook-dik 5s infinite ease-out;
 }
@@ -374,7 +381,7 @@ section.others {
 }
 
 .thaisoc-logo {
-	width: 300px;
+	width: 18vw;
 	cursor: pointer;
 }
 

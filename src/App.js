@@ -107,7 +107,7 @@ class App extends React.Component {
 				me.innerHTML =
 					'<p><span style="font-family: Vibes; font-size: 70px;">THAI</span> & <span style="font-family: Big Shoulder Texts; font-weight: bold; font-size: 60px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; color: rgb(243, 238, 229);" >British.</span></p>'
 			} else if (offset > 400) {
-				me.innerHTML = '<p style="font-size: 30px;">not Batman.</p>'
+				me.innerHTML = '<p style="font-size: 30px;">a fast learner.</p>'
 			} else if (offset > 300) {
 				me.innerHTML = '<p style="font-family: Mansalva;">MOTIVATED.</p>'
 			} else if (offset > 200) {
@@ -151,12 +151,10 @@ class App extends React.Component {
 
 	// For hyperlink buttons
 	openLink = link => {
-		console.log('hello')
 		window.open(link, '_blank')
 	}
 
 	render() {
-		console.log('hoe')
 		return (
 			<div className='App'>
 				<div className='Menu'>

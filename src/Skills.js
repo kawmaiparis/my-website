@@ -60,8 +60,8 @@ class Skills extends React.Component {
 		isOpen: false,
 		items: [
 			'Node & React',
-			'Unit Testing: Mocha & Chai',
-			'Unit Testing: JUnit',
+			'Unit Test: Mocha & Chai Js',
+			'Unit Test: JUnit',
 			'GCP',
 			'AWS',
 			'Digital Ocean',

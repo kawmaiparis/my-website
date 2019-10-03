@@ -1,6 +1,6 @@
 .big-logo {
 	cursor: pointer;
-	width: 400px;
+	width: 25vw;
 	transition: all 0.2s ease-out;
 }
 .small-logo {
@@ -44,11 +44,10 @@
 	font-size: 20px;
 }
 .work-garena {
-	position: relative;
+	position: absolute;
+	bottom: -16%;
 	width: 100%;
 	height: 50vh;
-	padding: 20px;
-	margin-top: -400px;
 	/* background-color: grey; */
 }
 
@@ -61,7 +60,7 @@
 }
 
 .text-small {
-	font-size: 25px;
+	font-size: 1.5vw;
 }
 
 h5 {
