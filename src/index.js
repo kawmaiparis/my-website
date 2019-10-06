@@ -11,7 +11,7 @@ const width = window.innerWidth
 const height = window.innerHeight
 console.log(width, height)
 
-if (width < 1440 || height < 730) {
+if (width < 1000 || height < 500) {
 	ReactDOM.render(<Mobile />, document.getElementById('root'))
 } else {
 	ReactDOM.render(<App />, document.getElementById('root'))
