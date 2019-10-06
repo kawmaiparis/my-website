@@ -40,7 +40,7 @@ class Projects extends React.Component {
 				<div className='project A'>
 					<h1>Truffle Voting</h1>
 					<p>
-						GO · Solidity · Javascript · Blockchain & ETH Smart Contract ·
+						Go · Solidity · Javascript · Blockchain & ETH Smart Contract ·
 						Truffle Js · Metamask{' '}
 					</p>
 					<Item

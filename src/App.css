@@ -169,7 +169,7 @@ h1.paris {
 	position: absolute;
 	right: -28.5%;
 	top: 25%;
-	transition: all 0.2s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 h1.paris:hover {
@@ -185,7 +185,7 @@ h1.mongkolkul {
 }
 
 h1.mongkolkul:hover {
-	color: rgb(158, 38, 38);
+	color: rgb(172, 60, 60);
 	font-size: 12vw;
 }
 

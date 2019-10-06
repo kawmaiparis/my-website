@@ -142,7 +142,7 @@ class App extends React.Component {
 			opacity: 0
 		})
 		ScrollReveal().reveal('.resume-big-container', {
-			delay: 2000,
+			delay: 500,
 			duration: 1000,
 			scale: 0.85,
 			opacity: 0
@@ -261,11 +261,25 @@ class App extends React.Component {
 							<br />
 							<br />
 							<p className='description-reveal'>
-								A final year Computing student at Imperial College London based
-								in, well, London. I still can't decide between frontend,
-								backend, and 150 other specialized job titles. So I'm currently
-								open to any exciting and challenging opportunities anyone has to
-								offer.
+								A final year{' '}
+								<span style={{ color: 'rgb(220, 110, 105)' }}>
+									BEng <b>Computing</b>
+								</span>{' '}
+								student at{' '}
+								<span style={{ color: '#BE5C6A' }}>
+									<b>Imperial</b> College London
+								</span>{' '}
+								soon to be graduated in{' '}
+								<span style={{ color: '#873B69' }}>
+									June <b>2020</b>
+								</span>
+								. As reality is kicking in, I'm currently open to any{' '}
+								<span style={{ color: '#6B2A68' }}>exciting </span> and{' '}
+								<span style={{ color: '#4F1968' }}>
+									challenging opportunities
+								</span>
+								. Ideally full-stack, but anything is{' '}
+								<span style={{ color: '#330867' }}>possible</span>.
 							</p>
 						</div>
 					</div>
