@@ -30,7 +30,6 @@ class Mobile extends React.Component {
 
 				<div className='mobile-text'>
 					<h1 className='mobile-h2'>Please open me on a larger screen...</h1>
-					<br />
 					<h1 className='mobile-h2'>
 						I promise I'll fix this when I have more free time.
 					</h1>

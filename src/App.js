@@ -266,20 +266,19 @@ class App extends React.Component {
 									BEng <b>Computing</b>
 								</span>{' '}
 								student at{' '}
-								<span style={{ color: '#BE5C6A' }}>
+								<span style={{ color: '#873B69' }}>
 									<b>Imperial</b> College London
 								</span>{' '}
 								soon to be graduated in{' '}
-								<span style={{ color: '#873B69' }}>
+								<span style={{ color: '#4F1968' }}>
 									June <b>2020</b>
 								</span>
-								. As reality is kicking in, I'm currently open to any{' '}
-								<span style={{ color: '#6B2A68' }}>exciting </span> and{' '}
-								<span style={{ color: '#4F1968' }}>
-									challenging opportunities
+								. As reality is kicking in, I'm currently open to any
+								challenging opportunities. Ideally{' '}
+								<span style={{ color: 'rgb(144, 33, 33)' }}>
+									<b>full-stack</b>
 								</span>
-								. Ideally full-stack, but anything is{' '}
-								<span style={{ color: '#330867' }}>possible</span>.
+								, but anything is possible
 							</p>
 						</div>
 					</div>
