@@ -114,7 +114,7 @@ class App extends React.Component {
 				me.innerHTML = '<p>hungry.</p>'
 			} else if (offset > 100) {
 				me.innerHTML =
-					'<p style="font-size: 30px; letter-spacing: 0.5em;"> sarcarstic.</p>'
+					'<p style="font-size: 30px; letter-spacing: 0.5em;"> Asian.</p>'
 			} else if (offset > 0) {
 				me.innerHTML =
 					'<p style="font-weight: bold; font-size: 80px;">Paris.</p>'
